@@ -1,7 +1,7 @@
-# Hello World SDK Project
+# Greeting SDK Project
 
 ## Project Capabilities
-This project demonstrates how to use the **SAP Generative AI Hub SDK** to build a simple "Hello World" AI agent. It serves as a foundational example for developers getting started with SAP Business Technology Platform (BTP) AI services.
+This project demonstrates how to use the **SAP Generative AI Hub SDK** to build a simple "Greeting" AI agent. It serves as a foundational example for developers getting started with SAP Business Technology Platform (BTP) AI services.
 
 **Key Capabilities:**
 - **Connectivity**: Establishes a secure connection to SAP AI Core using service key credentials.
@@ -134,3 +134,4 @@ Before running this project, ensure you have:
     - Open the command palette (`F1` or `Ctrl+Shift+P`).
     - Type `Git: Add Remote` and enter your repository URL.
     - Type `Git: Push` to push your changes.
+
