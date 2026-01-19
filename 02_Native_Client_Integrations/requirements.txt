@@ -1,0 +1,12 @@
+generative-ai-hub-sdk
+python-dotenv
+openai
+langchain
+langchain-community
+langchain-core
+langchain-aws
+langchain-openai
+langchain-google-vertexai
+aioboto3
+fastapi
+uvicorn

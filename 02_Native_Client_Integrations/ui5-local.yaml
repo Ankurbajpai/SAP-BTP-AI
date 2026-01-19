@@ -1,0 +1,38 @@
+specVersion: "4.0"
+metadata:
+  name: native.integrations
+type: application
+framework:
+  name: SAPUI5
+  version: 1.143.0
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.f
+    - name: sap.suite.ui.generic.template
+    - name: sap.ui.comp
+    - name: sap.ui.generic.app
+    - name: sap.ui.table
+    - name: sap.ushell
+    - name: themelib_sap_bluecrystal
+    - name: themelib_sap_horizon
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertErrors: false
+        backend:
+          - path: /sap
+            url: http://localhost:8090/api
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: native.integrations
+        ui5Theme: sap_horizon

@@ -1,0 +1,23 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Node
+node_modules/
+
+# UI5
+dist/
+.scp/
+archive.zip
+.*_mta_build_tmp
+
+# System
+.DS_Store
+
+# MTA
+Makefile*.mta
+mta_archives
+mta-*
+resources
