@@ -1,0 +1,3 @@
+sap-ai-sdk-gen[all]
+python-dotenv
+
